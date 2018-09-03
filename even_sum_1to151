@@ -1,2 +1,5 @@
 #even_sum_1to151
 sum_even_btwn_1to151=sum(map(lambda (k,v):v,filter((lambda (k,v):(k > 6)),list(enumerate(map(lambda b:b**2,(filter((lambda a:a%2==0),range(1,151)))))))))
+
+#better approach -- starting the range from 0, excuding it later
+sum_1=sum(map(lambda (k,v):(v*v),filter(lambda (k,v):(k>7),list(enumerate(range(0,151,2))))))
